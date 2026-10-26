@@ -21,7 +21,7 @@ diceEl.classList.add('hidden');
 
 const scores = [0, 0];
 let currentScore = 0;
-let activePlayer = 1;
+let activePlayer = 0;
 
 // Rolling Dice Functionality
 btnRoll.addEventListener('click', function () {
@@ -49,7 +49,7 @@ btnRoll.addEventListener('click', function () {
     // changing the visual effect of the current active player... Here we are using toggle method here in this toggle will add  the class if it is not present and it will remove if it is present
 
     // it means that if we have player--active class on player 0 but he got 1 so it this else statement will work and  it will remove the player--active class form it and add it to the player 1 as it don't have the active class.
-    
+
     player0El.classList.toggle('player--active');
     player1El.classList.toggle('player--active');
   }
